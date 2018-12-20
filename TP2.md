@@ -224,6 +224,10 @@ Avec Netcat : J'ai repérer la ligne où on a utiliser le netcat grâce au port 
 
 Avec PC1 et PC2 :
 
+### Firewall ###
+
+```http://prntscr.com/lxf28q```
+
 
 
     
