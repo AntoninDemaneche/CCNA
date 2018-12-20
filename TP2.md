@@ -207,11 +207,11 @@ Links             : {@{innerHTML=<SPAN class=gbtb2></SPAN><SPAN class=gbts>Reche
                     href="https://www.google.fr/we
 ```
 
-### Petit Chat Privé ###
+### 1- Petit Chat Privé ###
 
 Nous mettons alors en place le chat grâce à Netcat celui à réussit !
 
-### Wireshark ###
+### 2- Wireshark ###
 
 Avec un ping :
 
@@ -224,7 +224,7 @@ Avec Netcat : J'ai repérer la ligne où on a utiliser le netcat grâce au port 
 
 Avec PC1 et PC2 :
 
-### Firewall ###
+### 3- Firewall ###
 
 ```http://prntscr.com/lxf28q```
 
