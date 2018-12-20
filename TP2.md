@@ -1,10 +1,13 @@
-#TP 2 - Exploration du réseau d'un point de vue client#
+# TP 2 - Exploration du réseau d'un point de vue client #
 
-##ETAPE I : EXPLORATION LOCAL EN SOLO :##
 
+## ETAPE I : EXPLORATION LOCAL EN SOLO :##
+
+### 1- : Affichage d'informations sur la pile TCP/IP locale ###
 Adresse mac Ethernet :
 
-```Carte Ethernet Ethernet :
+```
+Carte Ethernet Ethernet :
 
    Statut du média. . . . . . . . . . . . : Média déconnecté
    Suffixe DNS propre à la connexion. . . :
@@ -13,7 +16,11 @@ Adresse mac Ethernet :
    DHCP activé. . . . . . . . . . . . . . : Oui
    Configuration automatique activée. . . : Oui
 
+```
+
 Adresse mac Wifi :
+
+```
 
 Carte réseau sans fil Wi-Fi :
 
@@ -33,7 +40,9 @@ Carte réseau sans fil Wi-Fi :
    DUID de client DHCPv6. . . . . . . . : 00-01-00-01-23-22-C5-47-E4-B9-7A-18-7E-D1
    Serveurs DNS. . .  . . . . . . . . . . : 10.0.10.20
                                        8.8.8.8
-   NetBIOS sur Tcpip. . . . . . . . . . . : Activé```
+   NetBIOS sur Tcpip. . . . . . . . . . . : Activé 
+  
+ ```
 
 
 L'adresse mac Ethernet est donc : E4-B9-7A-18-7E-D1
@@ -47,7 +56,8 @@ L'adresse Broadcast que nous obtenons est donc : 10.33.3.255
 
 Apres utilisations de la commande Ipconfig j'obtiens ça : 
 
-```Carte réseau sans fil Wi-Fi :
+```
+Carte réseau sans fil Wi-Fi :
 
    Suffixe DNS propre à la connexion. . . : auvence.co
    Description. . . . . . . . . . . . . . : Intel(R) Wireless-AC 9260
@@ -65,13 +75,16 @@ Apres utilisations de la commande Ipconfig j'obtiens ça :
    DUID de client DHCPv6. . . . . . . . : 00-01-00-01-23-22-C5-47-E4-B9-7A-18-7E-D1
    Serveurs DNS. . .  . . . . . . . . . . : 10.0.10.20
                                        8.8.8.8
-   NetBIOS sur Tcpip. . . . . . . . . . . : Activé```
+   NetBIOS sur Tcpip. . . . . . . . . . . : Activé
+   
+   ```
 
-   Et j'obtiens ainsi obtenir mon ip de paserelle qui est : 10.33.3.253
+Et j'obtiens ainsi obtenir mon ip de paserelle qui est : 10.33.3.253
 
-   Par la suite nous cherchons les mêmes informations mais à l'aide de l'OS, il nous suffit alors de nous rendre dans les paramétres réseaux et nous obtenons :
+Par la suite nous cherchons les mêmes informations mais à l'aide de l'OS, il nous suffit alors de nous rendre dans les paramétres réseaux et nous obtenons :
   
- ```SSID :	WiFi@YNOV
+ ```
+ SSID :	WiFi@YNOV
 Protocole :	802.11ac
 Type de sécurité :	WPA2 - Entreprise
 Type d’informations de connexion :	Microsoft: PEAP (Protected EAP)
@@ -84,7 +97,8 @@ Suffixe DNS principal :	auvence.co
 Fabricant :	Intel Corporation
 Description :	Intel(R) Wireless-AC 9260
 Version du pilote :	20.50.0.4
-Adresse physique (MAC) :	30-24-32-CA-8D-9D```
+Adresse physique (MAC) :	30-24-32-CA-8D-9D
+```
 
 On à encore une fois toute les informations nécesaire :
 Adressi ip : 10.33.0.219
@@ -92,17 +106,24 @@ Adresse Physique : 30-24-32-CA-8D-9D
 
 La Gateways est l'adresse IP que tout les utilisateurs sur le réseaux ingésup on.
 
+### 2- Modifications des informations ###
+
 Premiére adresse : 10.33.0.1
 Derniere adresse : 10.33.3.252 
 
 Pour changer l'adresse IP je me rend dans le paneau de configurations puis je vais dans réseaux et partage est finit par accéder au propriter de ma wifi pour changer mon IPV4.
 
+### B- Nmaps
+
 Nous avons ouvert et découvert nmaps.
+
+### C- Nmaps Modification d'adresse IP - pt. 2 ###
+
 
 On change l'adresse l'IP, celle-ci ffonctione en modifiant.La Gateways la connections au réseaux est alors imposible
 
 
-##Partie II : Explorations en Duo ##
+## Partie II : Explorations en Duo ##
 
 Nous modifions notre adresse IP et obtenons :
 Adresse IP ma machine : 10.33.3.18
@@ -115,7 +136,8 @@ Nous nous pingons :
 Réponse de 10.33.3.19 : octets=32 temps<1ms TTL=128
 Réponse de 10.33.3.19 : octets=32 temps<1ms TTL=128
 Réponse de 10.33.3.19 : octets=32 temps<1ms TTL=128
-Réponse de 10.33.3.19 : octets=32 temps<1ms TTL=128```
+Réponse de 10.33.3.19 : octets=32 temps<1ms TTL=128
+```
 
 Statistiques Ping pour 10.33.3.19:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
@@ -133,7 +155,8 @@ Tent en /20 et /24 réussit, il suffit simplement de changer le troisiéme chiff
 
 Nous effectuons un ping entre les deux machines cela fonctionne bien nous avons une réponse des deux machine :
 
-```Envoi d’une requête 'Ping'  12.33.9.19 avec 32 octets de données :
+```
+Envoi d’une requête 'Ping'  12.33.9.19 avec 32 octets de données :
 Réponse de 12.33.9.19 : octets=32 temps=1 ms TTL=128
 Réponse de 12.33.9.19 : octets=32 temps<1ms TTL=128
 Réponse de 12.33.9.19 : octets=32 temps<1ms TTL=128
@@ -142,10 +165,13 @@ Réponse de 12.33.9.19 : octets=32 temps<1ms TTL=128
 Statistiques Ping pour 12.33.9.19:
     Paquets : envoyés = 4, reçus = 4, perdus = 0 (perte 0%),
 Durée approximative des boucles en millisecondes :
-    Minimum = 0ms, Maximum = 1ms, Moyenne = 0ms```
+    Minimum = 0ms, Maximum = 1ms, Moyenne = 0ms
+  ```
 
 Maintenant nous réalisons le ping 8.8.8.8 
-```PS C:\Users\Antonin> curl google.com
+
+```
+PS C:\Users\Antonin> curl google.com
 
 
 StatusCode        : 200
