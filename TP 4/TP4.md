@@ -60,6 +60,8 @@ ARP Server 1 :
 
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/appostpingSERVER.png?raw=true)
 
+Cela nous fait remarquer que les lignes initialement en "Delay" sont passer en "Reacheable" cela veut surement dire qu'une connections à étais éffectuer avec une autre entité.
+
 #### B - Manip 2 : 
 
 Nous vidons les tables ARP.
@@ -70,11 +72,12 @@ Nous pingons alors le server 1 avec client 1 et réobservons la table arp du rou
 
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/roterapresvidageetping.png?raw=true)
 
+Dans ce cas aussi de nouvelles lignes sont apparut changeant les lignes, cela veut dire que les connections ce sont fait correctement et existe
+
 
 #### C - Manip 3 :
 
-(pas fait mdrrr)
+Dans ce cas si nous remarquons que les lignes ARP sont constament différente.Cela sans doute dus au fait que notre hôte est connecter à beaucoups de chose en même temps les données sont donc relativement changeante.
 
 #### D - Manip 4 : 
-
-( non plus mdr )
+Dans ce cas la une nouvelle lignes est apparut portant avec elle l'adresse des serveurs de Google.
