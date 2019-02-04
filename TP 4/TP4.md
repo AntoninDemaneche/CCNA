@@ -17,13 +17,13 @@ Server 1 : 10.2.0.1
 
 Une fois chose faite, nous créons les VMs.
 
-[Image]
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/opperationnel.png?raw=true)
 
 Une fois les ips statiques et les noms de domaine réaliser nous réalisons les pings :
 
-(image client vers router)
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/Ping%20client%20rooter.png?raw=true)
 
-(image server vers routers)
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/ping%20server%20rooter.png?raw=true)
 
 Cela fonctionne nous pouvons continuer !
 
@@ -33,7 +33,7 @@ Il faut maintenant Ping le server 1 avec le Client 1 en sommes ping une vm avec 
 
 Nous ajoutons les routes au vms et obtenons ceci.
 
-( image vm qui se ping)
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/Ping%20entre%20vm.png?raw=true)
 
 Chose réussite !
 
@@ -42,13 +42,26 @@ Chose réussite !
 ### 1 - Arp 
 
 #### A - Manip 1 : 
+ARP Client 1 :
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/tablearpclien1.png?raw=true)
+ARP Server 1 : 
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/tablearpclien2.png?raw=true)
 
-( expliquez les lignes )
-( expliquez le changement   )
+L'ont peut voirs que certaine ligne sont en delay contrairement a d'autre qui sont en stale.
+
+ARP Client 1 apres ping :
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/arppostpingCLIEN.png?raw=true)
+ARP Server 1 : 
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/appostpingSERVER.png?raw=true)
 
 #### B - Manip 2 : 
 
-(Expliquez aussi )
+Nous vidons les tables ARP.
+
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/vidageroter.png?raw=true)
+Nous pingons alors le server 1 avec client 1 et réobservons la table arp du router.
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/roterapresvidageetping.png?raw=true)
+
 
 #### C - Manip 3 :
 
