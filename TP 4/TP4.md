@@ -43,15 +43,21 @@ Chose réussite !
 
 #### A - Manip 1 : 
 ARP Client 1 :
+
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/tablearpclien1.png?raw=true)
+
 ARP Server 1 : 
+
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/tablearpclien2.png?raw=true)
 
 L'ont peut voirs que certaine ligne sont en delay contrairement a d'autre qui sont en stale.
 
 ARP Client 1 apres ping :
+
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/arppostpingCLIEN.png?raw=true)
+
 ARP Server 1 : 
+
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/appostpingSERVER.png?raw=true)
 
 #### B - Manip 2 : 
@@ -59,7 +65,9 @@ ARP Server 1 :
 Nous vidons les tables ARP.
 
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/vidageroter.png?raw=true)
+
 Nous pingons alors le server 1 avec client 1 et réobservons la table arp du router.
+
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%204/Image/roterapresvidageetping.png?raw=true)
 
 
