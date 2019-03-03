@@ -3,7 +3,12 @@
 ## I. Préparation du lab 
 Tout d'abbord nous allons crée les VM et les routers respectivement sur Virtual box et GNS3
 
+Virtual Box :
+
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%205/image/allvm.png?raw=true)
+
+
+GNS3 :
 
 ![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%205/image/vutotal.png?raw=true)
 
