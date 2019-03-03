@@ -3,9 +3,9 @@
 ## I. Préparation du lab 
 Tout d'abbord nous allons crée les VM et les routers respectivement sur Virtual box et GNS3
 
-( inséré image )
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%205/image/allvm.png?raw=true)
 
-(inséré image )
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%205/image/vutotal.png?raw=true)
 
 ## II. Lancement et configuration du lab
 
@@ -150,6 +150,8 @@ PING server1 (10.5.1.10) 56(84) bytes of data.
 ## III. DHCP
 
 Configuration d'abbord le client 2 comme nouveau serveur DHCP, puis commençons nos expérience :
+
+![](https://github.com/AntoninDemaneche/CCNA/blob/master/TP%205/image/Dhcp.png?raw=true)
 
 Petit Test : 
 ```
