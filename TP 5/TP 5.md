@@ -130,10 +130,13 @@ PING client2 (10.5.2.11) 56(84) bytes of data.
 ```
 Ping  Client 1 vers server 1 :
 
-```[user@client1 ~]$ ping server1
+```
+[user@client1 ~]$ ping server1
 PING server1 (10.5.1.10) 56(84) bytes of data.
 64 bytes from server1 (10.5.1.10): icmp_seq=1 ttl=62 time=47.9 ms
-64 bytes from server1 (10.5.1.10): icmp_seq=2 ttl=62 time=43.2 ms ```
+64 bytes from server1 (10.5.1.10): icmp_seq=2 ttl=62 time=43.2 ms 
+
+```
 
 Ping client 2 vers server 1  :
 
